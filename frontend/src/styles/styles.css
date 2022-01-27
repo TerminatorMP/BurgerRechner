@@ -1,0 +1,17 @@
+:root {
+    --primary: #00acc1 !important;
+}
+
+.App {
+    font-family: sans-serif;
+    padding-top: 30px;
+    min-height: 200vh;
+}
+
+.spacer-top {
+    margin-top: 20px;
+}
+
+.spacer-bottom {
+    margin-bottom: 20px;
+}
