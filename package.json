@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "cd frontend && npm run build && cd .. && cp -R frontend/build/* public/",
-    "dev": "concurrently \"NODE_ENV=development PORT=3000 nodemon\" \" cd frontend && PORT=3001 npm start\""
+    "build-local": "cd frontend && npm run build && cd .. && cp -R frontend/build/* public/",
+    "dev": "concurrently \"NODE_ENV=development PORT=3000 nodemon\" \" cd frontend && PORT=3001 npm start\"",
+    "heroku": "git push heroku main"
   },
   "dependencies": {
     "concurrently": "^7.0.0",
