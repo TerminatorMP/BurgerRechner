@@ -1,10 +1,10 @@
 {
   "name": "burgerrechner",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "cd frontend && npm run build && cd .. && cp -R frontend/build/ public/",
+    "build": "cd frontend && npm run build && cd .. && cp -R frontend/build/* public/",
     "dev": "concurrently \"NODE_ENV=development PORT=3000 nodemon\" \" cd frontend && PORT=3001 npm start\""
   },
   "dependencies": {
@@ -19,5 +19,8 @@
     "mongodb": "^4.3.1",
     "morgan": "~1.9.1",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "17.x"
   }
 }
