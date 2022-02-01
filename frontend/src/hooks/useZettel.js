@@ -56,6 +56,7 @@ export function useZettel() {
             }),
             components: allComponents,
             open: true,
+            created_at: Date.now(),
         };
         addOrder(newZettel);
         updateZettel();

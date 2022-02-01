@@ -106,11 +106,31 @@ export const data = [
         ]
     },
     {
+        item: "Kaffee",
+        price: 70,
+        ingridients: [
+            {
+                name: "Kaffee",
+                count: 1
+            }
+        ]
+    },
+    {
         item: "Bier",
         price: 100,
         ingridients: [
             {
                 name: "Bier",
+                count: 1
+            }
+        ]
+    },
+    {
+        item: "Happy Meal",
+        price: 750,
+        ingridients: [
+            {
+                name: "Joint",
                 count: 1
             }
         ]

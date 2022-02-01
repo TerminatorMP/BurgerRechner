@@ -33,7 +33,7 @@ MongoClient.connect(process.env.MONGO_CONNECTION, (err, client) => {
             console.log(result)
         })
         .catch(error => console.error(error))
-})
+    })
 
 router.get('/all', (req, res) => {
     console.log("Orders all")
@@ -42,7 +42,21 @@ router.get('/all', (req, res) => {
             res.json(result)
         })
         .catch(error => console.error(error))
-})
+    })
+
+    router.get('/weekly', (req, res) => {
+
+        const dateBeforeOneWeek = new Date();
+        dateBeforeOneWeek.setDate(dateBeforeOneWeek.getDate()-5);
+        console.log("Date before 1 week: " + Date.parse(dateBeforeOneWeek.toString()));
+
+        ordersCollection.find({created_at: { $gt: Date.parse(dateBeforeOneWeek.toString()) }})
+            .toArray()
+            .then(result => {
+                    res.json(result)
+            })
+            .catch(error => console.error(error))
+    })
 })
 
 module.exports = router;

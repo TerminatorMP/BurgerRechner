@@ -51,3 +51,21 @@ export const removeOrder = (id) => {
         .then(response => response.json())
         .then(data => console.log("Order removed: " +data));
 }
+
+
+
+export const getAllOrdersOfLastWeek = async () => {
+    let DEV_URL = '';
+
+    if (process.env.NODE_ENV === 'development') {
+        DEV_URL = 'http://localhost:3000';
+    }
+
+    const requestOptions = {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+    };
+
+    const res = await fetch(`${DEV_URL}/orders/weekly`, requestOptions)
+    return await res.json();
+}
