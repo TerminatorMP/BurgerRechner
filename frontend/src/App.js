@@ -40,7 +40,7 @@ export default function App() {
             <div style={{display: "flex", justifyContent: "space-between"}}>
                 <h1>Burgerrechner9000</h1>
                 <div>
-                    <div>Umsatz letzte Woche: {wockenUmsatz}</div>
+                    <div>Umsatz seit letzter Woche: {wockenUmsatz}</div>
                     <button onClick={calcUmsatz} className={"outline"}>Kalkuliere Wochenumsatz</button>
                 </div>
             </div>
