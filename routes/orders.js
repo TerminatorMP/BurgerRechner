@@ -47,7 +47,7 @@ router.get('/all', (req, res) => {
     router.get('/weekly', (req, res) => {
 
         const dateBeforeOneWeek = new Date();
-        dateBeforeOneWeek.setDate(dateBeforeOneWeek.getDate()-5);
+        dateBeforeOneWeek.setDate(dateBeforeOneWeek.getDate()-7);
         console.log("Date before 1 week: " + Date.parse(dateBeforeOneWeek.toString()));
 
         ordersCollection.find({created_at: { $gt: Date.parse(dateBeforeOneWeek.toString()) }})
