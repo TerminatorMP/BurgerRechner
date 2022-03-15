@@ -126,8 +126,28 @@ export const data = [
         ]
     },
     {
+        item: "Pfirsichsaft",
+        price: 250,
+        ingridients: [
+            {
+                name: "Pfirsichsaft",
+                count: 1
+            }
+        ]
+    },
+    {
+        item: "Traubensaft",
+        price: 400,
+        ingridients: [
+            {
+                name: "Traubensaft",
+                count: 1
+            }
+        ]
+    },
+    {
         item: "Happy Meal",
-        price: 750,
+        price: 1000,
         ingridients: [
             {
                 name: "Joint",
