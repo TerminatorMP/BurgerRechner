@@ -1,7 +1,7 @@
 export const data = [
     {
         item: "Bleeder",
-        price: 80,
+        price: 8,
         ingridients: [
             {
                 name: "Brot",
@@ -19,7 +19,7 @@ export const data = [
     },
     {
         item: "Veggie Burger",
-        price: 80,
+        price: 8,
         ingridients: [
             {
                 name: "Gluten Brot",
@@ -41,7 +41,7 @@ export const data = [
     },
     {
         item: "Chicken Burger",
-        price: 100,
+        price: 10,
         ingridients: [
             {
                 name: "Tomate",
@@ -67,7 +67,7 @@ export const data = [
     },
     {
         item: "Chicken Nuggets x10",
-        price: 300,
+        price: 30,
         ingridients: [
             {
                 name: "Nuggets",
@@ -77,7 +77,7 @@ export const data = [
     },
     {
         item: "Chicken Nuggets x4",
-        price: 100,
+        price: 10,
         ingridients: [
             {
                 name: "Nuggets",
@@ -87,7 +87,7 @@ export const data = [
     },
     {
         item: "Pommes",
-        price: 50,
+        price: 5,
         ingridients: [
             {
                 name: "Kartoffel",
@@ -97,7 +97,7 @@ export const data = [
     },
     {
         item: "Wasser",
-        price: 50,
+        price: 5,
         ingridients: [
             {
                 name: "Wasser",
@@ -107,7 +107,7 @@ export const data = [
     },
     {
         item: "Kaffee",
-        price: 70,
+        price: 7,
         ingridients: [
             {
                 name: "Kaffee",
@@ -117,7 +117,7 @@ export const data = [
     },
     {
         item: "Bier",
-        price: 100,
+        price: 10,
         ingridients: [
             {
                 name: "Bier",
@@ -127,7 +127,7 @@ export const data = [
     },
     {
         item: "Pfirsichsaft",
-        price: 250,
+        price: 25,
         ingridients: [
             {
                 name: "Pfirsichsaft",
@@ -137,7 +137,7 @@ export const data = [
     },
     {
         item: "Traubensaft",
-        price: 400,
+        price: 40,
         ingridients: [
             {
                 name: "Traubensaft",
@@ -147,7 +147,7 @@ export const data = [
     },
     {
         item: "Happy Meal",
-        price: 1000,
+        price: 100,
         ingridients: [
             {
                 name: "Joint",
